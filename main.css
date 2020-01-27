@@ -1,0 +1,65 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: Times New Roman;
+}
+
+#header{
+	height: 100vh;
+	background-image:url("background.png");
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.user-box{
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	position: absolute;
+}
+.user-box img{
+	height: 200px;
+	width: 200px;
+	transform: rotate(90deg);
+	border-radius: 50%;
+	border:2px solid #666;
+}
+.user-box h1{
+	color: #FFF;
+	font-weight: bold;
+	margin: 10px;
+}
+.user-box p{
+	color: #FFF;
+}
+.scroll-btn{
+	bottom: 30px;
+	position: absolute;
+	left:50%;
+	transform:translateX(-50%);
+	border: 1px solid;
+	padding: 10px 10px 20px;
+	border-radius: 30px;
+}
+.scroll-bar span{
+	border:2px solid;
+	font-size: 20px;
+	border-radius: 30px;
+}
+.scroll-bar{
+	animation: mover 1s infinite alternate;
+}
+@keyframes mover{
+	0%{transform: translateY(0);}
+	100%{transform: translateY(10px);}
+}
+
+/*---About--*/
+.about{
+	padding-top: 100px;
+	padding-bottom: 50px;
+}
+.profile-image{
+	height: 400px;
+	width: 400px;
+}
