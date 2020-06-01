@@ -11,6 +11,7 @@ body{
 	background-size: cover;
 	background-attachment: fixed;
 }
+/* creating a professional circle to put my pictures in */
 .user-box{
 	top: 50%;
 	left: 50%;
@@ -20,7 +21,6 @@ body{
 .user-box img{
 	height: 200px;
 	width: 200px;
-	transform: rotate(90deg);
 	border-radius: 50%;
 	border:2px solid #666;
 }
@@ -32,6 +32,7 @@ body{
 .user-box p{
 	color: #FFF;
 }
+/* adds a mini scroll button at the main screen  to indicate to the user to scroll down */
 .scroll-btn{
 	bottom: 30px;
 	position: absolute;
@@ -62,4 +63,45 @@ body{
 .profile-image{
 	height: 400px;
 	width: 400px;
+
+}
+/* this makes it so the nav bar sticks to the top of the screen when it is scrolled past */
+.nav-bar{
+	position: sticky;
+	top:0;
+	z-index: 2;
+}
+.navbar{
+	background-color: #000;
+}
+.navbar-brand-img{
+	height:50px;
+}
+.nav-bar .fa-bars{
+	font-size: 35px;
+	color:#000;
+}
+.navbar-toggler{
+ 	outline:none !important;
+}
+.navbar-nav{
+	float:right;
+	text-align:right;
+}
+.nav-link{
+	color:#000 !important;
+}
+.skills p{
+	margin-bottom:6px;
+	font-weight:600;
+	
+}
+.ability{
+	border-radius:16px !important;
+	margin-bottom:10px;
+
+}
+.ability-bar{
+	border-radius:16px;
+	background: #000 !important;
 }
